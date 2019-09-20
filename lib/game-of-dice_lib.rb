@@ -7,12 +7,12 @@ class GameOfDice
     @sides
   end
 
-  def roll(number_dice)
+  def roll(number_dice = 1)
     roll_result = Array.new
     number_dice.times do
       roll_result << rand(1..@sides)
     end
     roll_result
   end
-  
+
 end

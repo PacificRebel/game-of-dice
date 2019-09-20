@@ -23,4 +23,12 @@ describe GameOfDice do
     expected = [1,6]
     expect(actual).to eq(expected)
   end
+
+  it 'assumes rolling only 1 die if not specified' do
+    dice = GameOfDice.new
+    roll = dice.roll
+    actual = roll.size
+    expected = 1
+    expect(actual).to eq(expected)
+  end
 end
