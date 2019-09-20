@@ -7,4 +7,11 @@ describe GameOfDice do
     expected = 6
     expect(actual).to eq(expected)
   end
+
+  it 'initialises dice with 12 sides' do
+    dice = GameOfDice.new(12)
+    actual = dice.sides
+    expected = 12
+    expect(actual).to eq(expected)
+  end
 end
